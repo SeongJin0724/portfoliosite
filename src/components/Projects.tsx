@@ -116,13 +116,17 @@ export function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
   const mousePosition = useMousePosition();
+  const sortedProjects = [...projects].sort((a, b) => {
+    const featureDiff = (b.features?.length ?? 0) - (a.features?.length ?? 0);
+    return featureDiff !== 0 ? featureDiff : a.id - b.id;
+  });
 
   const filtered =
     activeCategory === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      ? sortedProjects
+      : sortedProjects.filter((p) => p.category === activeCategory);
 
-  const hoveredProject = projects.find((p) => p.id === hoveredId);
+  const hoveredProject = sortedProjects.find((p) => p.id === hoveredId);
 
   return (
     <section id="projects" className="section-padding bg-muted/20">
