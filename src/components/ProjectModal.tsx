@@ -140,7 +140,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 16 }}
                 transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-                className="relative bg-card border border-border rounded-2xl w-full max-w-2xl shadow-2xl"
+                className="relative bg-card border border-border rounded-2xl w-full max-w-2xl shadow-2xl max-h-[calc(100dvh-2rem)] md:max-h-[calc(100dvh-4rem)] flex flex-col overflow-hidden"
               >
                 {/* Project Image */}
                 <div className={`relative h-48 md:h-64 bg-gradient-to-br ${gradientClass} rounded-t-2xl overflow-hidden flex-shrink-0`}>
@@ -190,7 +190,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 md:p-8">
+                <div className="p-6 md:p-8 overflow-y-auto">
                   {/* Title */}
                   <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-3">
                     {project.title}
