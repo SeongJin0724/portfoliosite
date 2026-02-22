@@ -213,7 +213,7 @@ export const projects: Project[] = [
     title: "Movie App",
     url: "https://dreamy-wright-e04f25.netlify.app",
     category: "App",
-    description: "Vue 3 기반 영화 검색 애플리케이션",
+    description: "Vue 3 기반 영화 검색 애플리케이션 (영어로만 검색 가능)",
     tech: ["Vue 3", "JavaScript", "OMDB API"],
     image: "/images/projects/vue-movie.jpg",
     details:
