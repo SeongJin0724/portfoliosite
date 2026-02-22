@@ -201,7 +201,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 md:p-8 overflow-y-auto">
+                <div
+                  data-lenis-prevent
+                  className="p-6 md:p-8 overflow-y-auto overscroll-contain"
+                >
                   {/* Title */}
                   <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-3">
                     {project.title}
