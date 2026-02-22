@@ -278,6 +278,24 @@ export const projects: Project[] = [
       "실시간 데이터 처리",
     ],
   },
+  {
+    id: 17,
+    title: "JOYCOIN",
+    url: "https://joycoin-portfolio-frontend.vercel.app",
+    category: "App",
+    description: "실제 클라이언트 의뢰로 제작한 JOYCOIN 플랫폼 포트폴리오 배포 버전",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    image: "/images/projects/joycoin.png",
+    details:
+      "실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다. JOYCOIN 플랫폼의 진입 전 법적 고지 확인 흐름을 중심으로 구성된 웹 프로젝트로, 언어 전환(한국어/English), 단계별 고지 탭, 스크롤 기반 확인 절차, 체크리스트 동의 후 진입 버튼 활성화 UX를 구현했습니다.",
+    features: [
+      "한국어 / English 언어 전환",
+      "법적 고지 탭(이용약관/위험 고지/토큰 성격/개인정보 처리방침)",
+      "스크롤 완료 기반 진행 상태 및 체크리스트 동의 흐름",
+      "조건 충족 시 플랫폼 입장 버튼 활성화",
+      "클라이언트 납품본 기준 일부 기능 제한된 포트폴리오 배포 버전",
+    ],
+  },
 ];
 
 export const categories = ["All", "App", "Publishing", "Clone", "Tool"] as const;

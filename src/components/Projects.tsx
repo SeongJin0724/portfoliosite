@@ -116,7 +116,7 @@ export function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
   const mousePosition = useMousePosition();
-  const prioritizedIds = [16, 13, 12, 2, 1];
+  const prioritizedIds = [17, 16, 13, 12, 2, 1];
   const sortedProjects = [...projects].sort((a, b) => {
     const aPriority = prioritizedIds.indexOf(a.id);
     const bPriority = prioritizedIds.indexOf(b.id);
