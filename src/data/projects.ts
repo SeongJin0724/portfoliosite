@@ -217,7 +217,7 @@ export const projects: Project[] = [
     tech: ["Vue 3", "JavaScript", "OMDB API"],
     image: "/images/projects/vue-movie.jpg",
     details:
-      "OMDB API를 활용해 영화를 검색하고 상세 정보를 확인할 수 있는 Vue 3 애플리케이션입니다. Composition API와 Vuex를 학습하며 제작했습니다.",
+      "OMDB API를 활용해 영화를 검색하고 상세 정보를 확인할 수 있는 Vue 3 애플리케이션입니다. Composition API와 Vuex를 학습하며 제작했습니다. 영어로만 검색 가능합니다.",
     features: [
       "OMDB API 영화 검색",
       "영화 상세 정보 조회",
