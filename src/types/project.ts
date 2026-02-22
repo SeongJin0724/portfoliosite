@@ -10,4 +10,6 @@ export interface Project {
   image: string;
   isPrivate?: boolean;
   videoUrl?: string;
+  details?: string;
+  features?: string[];
 }

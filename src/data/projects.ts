@@ -8,7 +8,15 @@ export const projects: Project[] = [
     category: "App",
     description: "React 기반 할 일 관리 애플리케이션",
     tech: ["React", "JavaScript", "CSS"],
-    image: "/images/projects/task-app.webp",
+    image: "/images/projects/task-app.jpg",
+    details:
+      "React의 상태 관리(useState, useEffect)를 학습하며 제작한 할 일 관리 앱입니다. 데이터를 로컬 스토리지에 저장해 새로고침 후에도 유지되며, 직관적인 UI로 빠르게 할 일을 관리할 수 있습니다.",
+    features: [
+      "할 일 추가 / 수정 / 삭제",
+      "완료 체크 및 상태 표시",
+      "로컬 스토리지 데이터 영속성",
+      "완료 / 미완료 필터링",
+    ],
   },
   {
     id: 2,
@@ -17,7 +25,16 @@ export const projects: Project[] = [
     category: "Clone",
     description: "YouTube UI 클론 프로젝트",
     tech: ["React", "YouTube API", "CSS"],
-    image: "/images/projects/youtube-clone.webp",
+    image: "/images/projects/youtube-clone.jpg",
+    details:
+      "YouTube Data API v3를 연동해 실제 YouTube와 동일한 UI를 구현한 클론 프로젝트입니다. 검색, 영상 재생, 채널 정보 등 핵심 기능을 직접 구현했습니다.",
+    features: [
+      "YouTube Data API v3 연동",
+      "키워드 영상 검색",
+      "영상 클릭 시 상세 페이지 이동",
+      "인기 동영상 목록 표시",
+      "반응형 그리드 레이아웃",
+    ],
   },
   {
     id: 3,
@@ -26,7 +43,15 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "피트니스 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/gymlab.webp",
+    image: "/images/projects/gymlab.jpg",
+    details:
+      "피트니스 센터 브랜드 웹사이트를 디자인하고 퍼블리싱한 프로젝트입니다. 스크롤 기반 애니메이션과 시각적으로 강렬한 레이아웃 구성에 집중했습니다.",
+    features: [
+      "스크롤 트리거 애니메이션",
+      "서비스 소개 / 가격표 섹션",
+      "반응형 레이아웃",
+      "모바일 햄버거 메뉴",
+    ],
   },
   {
     id: 4,
@@ -35,7 +60,15 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "카페 브랜드 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/cannafe.webp",
+    image: "/images/projects/cannafe.jpg",
+    details:
+      "카페 브랜드의 컨셉에 맞는 따뜻한 톤의 웹사이트 퍼블리싱 프로젝트입니다. 메뉴 갤러리와 브랜드 스토리 섹션 구성에 집중했습니다.",
+    features: [
+      "브랜드 스토리 섹션",
+      "메뉴 갤러리",
+      "매장 안내 섹션",
+      "반응형 디자인",
+    ],
   },
   {
     id: 5,
@@ -44,7 +77,15 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "바버샵 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/barbershop.webp",
+    image: "/images/projects/barbershop.jpg",
+    details:
+      "남성 그루밍 브랜드 컨셉의 바버샵 웹사이트 퍼블리싱 프로젝트입니다. 모던하고 깔끔한 다크 톤 디자인을 구현했습니다.",
+    features: [
+      "서비스 & 가격 안내 섹션",
+      "팀 소개 섹션",
+      "예약 안내 UI",
+      "반응형 레이아웃",
+    ],
   },
   {
     id: 6,
@@ -53,7 +94,15 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "검찰청 공식 웹사이트 클론 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/prosecutor.webp",
+    image: "/images/projects/prosecutor.jpg",
+    details:
+      "검찰청 공식 웹사이트를 분석하고 구조 및 레이아웃을 클론 퍼블리싱한 프로젝트입니다. 공공기관 사이트 특유의 정보 구조와 접근성을 고려한 마크업에 집중했습니다.",
+    features: [
+      "공공기관 스타일 그리드 레이아웃",
+      "뉴스 / 공지사항 섹션",
+      "메뉴 네비게이션 구현",
+      "시맨틱 마크업",
+    ],
   },
   {
     id: 7,
@@ -62,7 +111,16 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "이커머스 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/innomerce.webp",
+    image: "/images/projects/innomerce.jpg",
+    details:
+      "이커머스 플랫폼 UI를 퍼블리싱한 프로젝트입니다. 상품 목록, 상품 상세, 장바구니 등 쇼핑몰의 핵심 페이지 레이아웃을 구현했습니다.",
+    features: [
+      "상품 목록 그리드 레이아웃",
+      "카테고리 필터 UI",
+      "상품 상세 페이지",
+      "장바구니 UI",
+      "반응형 디자인",
+    ],
   },
   {
     id: 8,
@@ -71,7 +129,16 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "커피빈 코리아 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/coffeebean.webp",
+    image: "/images/projects/coffeebean.jpg",
+    details:
+      "커피빈 코리아 공식 웹사이트를 참고하여 퍼블리싱한 프로젝트입니다. 브랜드 아이덴티티를 유지하면서 메뉴 소개와 매장 찾기 등 핵심 섹션을 구현했습니다.",
+    features: [
+      "메인 비주얼 배너",
+      "메뉴 소개 섹션",
+      "매장 찾기 UI",
+      "이벤트 / 프로모션 섹션",
+      "반응형 레이아웃",
+    ],
   },
   {
     id: 9,
@@ -80,7 +147,15 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "디자인 에이전시 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/regularbold.webp",
+    image: "/images/projects/regularbold.jpg",
+    details:
+      "디자인 에이전시 컨셉의 웹사이트 퍼블리싱 프로젝트입니다. 타이포그래피와 여백을 활용한 모던한 레이아웃, 스크롤 인터랙션 구현에 집중했습니다.",
+    features: [
+      "타이포그래피 중심 레이아웃",
+      "포트폴리오 갤러리 섹션",
+      "스크롤 인터랙션 효과",
+      "반응형 디자인",
+    ],
   },
   {
     id: 10,
@@ -89,34 +164,66 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "디저트 뮤지엄 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/museum-of-sweet.webp",
+    image: "/images/projects/museum-of-sweet.jpg",
+    details:
+      "디저트 전시 뮤지엄 컨셉의 웹사이트 퍼블리싱 프로젝트입니다. 감각적인 비주얼과 컬러를 활용한 디자인으로 방문자의 흥미를 유도하는 레이아웃을 구현했습니다.",
+    features: [
+      "비주얼 중심 히어로 섹션",
+      "전시 소개 갤러리",
+      "티켓 안내 섹션",
+      "스크롤 애니메이션",
+    ],
   },
   {
     id: 11,
-    title: "Document Editor",
+    title: "그림판",
     url: "https://courageous-yeot-58578e.netlify.app",
     category: "Tool",
-    description: "웹 기반 문서 편집기",
+    description: "웹 기반 그림판 애플리케이션",
     tech: ["React", "JavaScript", "CSS"],
-    image: "/images/projects/document-editor.webp",
+    image: "/images/projects/document-editor.jpg",
+    details:
+      "웹 브라우저에서 바로 사용할 수 있는 그림판 프로젝트입니다. Canvas API와 React를 활용해 그리기 기능을 구현했습니다.",
+    features: [
+      "마우스로 자유롭게 그리기",
+      "색상 및 굵기 선택",
+      "지우개 기능",
+      "캔버스 초기화",
+    ],
   },
   {
     id: 12,
-    title: "React App",
+    title: "AppShop",
     url: "https://epic-liskov-7c76bc.netlify.app",
     category: "App",
-    description: "React 기반 웹 애플리케이션",
+    description: "앱을 직접 체험하고 구매할 수 있는 앱 쇼핑몰",
     tech: ["React", "JavaScript", "CSS"],
-    image: "/images/projects/react-app.webp",
+    image: "/images/projects/react-app.jpg",
+    details:
+      "상품으로 등록된 앱을 클릭하면 모바일 화면으로 직접 체험해볼 수 있는 앱 쇼핑몰입니다. 쇼핑몰, 게임 등 다양한 앱을 모바일 뷰어로 실제처럼 사용해보고, 마음에 들면 장바구니에 담거나 바로 구매할 수 있습니다.",
+    features: [
+      "앱 목록 쇼핑몰 UI",
+      "모바일 뷰어로 앱 직접 체험",
+      "쇼핑몰 / 게임 등 다양한 앱 지원",
+      "장바구니 담기 및 구매 기능",
+    ],
   },
   {
     id: 13,
-    title: "Vue3 Movie App",
+    title: "Movie App",
     url: "https://dreamy-wright-e04f25.netlify.app",
     category: "App",
     description: "Vue 3 기반 영화 검색 애플리케이션",
     tech: ["Vue 3", "JavaScript", "OMDB API"],
-    image: "/images/projects/vue-movie.webp",
+    image: "/images/projects/vue-movie.jpg",
+    details:
+      "OMDB API를 활용해 영화를 검색하고 상세 정보를 확인할 수 있는 Vue 3 애플리케이션입니다. Composition API와 Vuex를 학습하며 제작했습니다.",
+    features: [
+      "OMDB API 영화 검색",
+      "영화 상세 정보 조회",
+      "즐겨찾기 저장 (로컬 스토리지)",
+      "Composition API 활용",
+    ],
   },
   {
     id: 14,
@@ -125,7 +232,16 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "스타벅스 코리아 웹사이트 클론 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/starbucks.webp",
+    image: "/images/projects/starbucks.jpg",
+    details:
+      "스타벅스 코리아 공식 웹사이트를 클론 퍼블리싱한 프로젝트입니다. 복잡한 레이아웃과 비주얼 슬라이더, 메뉴 구조 등을 그대로 구현하는 것에 집중했습니다.",
+    features: [
+      "메인 비주얼 이미지 슬라이더",
+      "드롭다운 메뉴 네비게이션",
+      "메뉴 / 굿즈 소개 섹션",
+      "매장 찾기 UI",
+      "반응형 레이아웃",
+    ],
   },
   {
     id: 15,
@@ -134,18 +250,34 @@ export const projects: Project[] = [
     category: "Publishing",
     description: "코렐 브랜드 웹사이트 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/projects/corelle.webp",
+    image: "/images/projects/corelle.jpg",
+    details:
+      "코렐 브랜드의 웹사이트를 퍼블리싱한 프로젝트입니다. 제품의 고급스러운 이미지를 살린 디자인과 제품 소개 갤러리 구현에 집중했습니다.",
+    features: [
+      "제품 소개 갤러리",
+      "브랜드 스토리 섹션",
+      "컬렉션 필터 UI",
+      "반응형 레이아웃",
+    ],
   },
   {
     id: 16,
-    title: "Scream",
+    title: "Scream (기존 Kream 사이트 리뉴얼)",
     url: null,
     category: "App",
     description: "Private 프로젝트 - 스크린 기반 애플리케이션",
     tech: ["React", "TypeScript", "Node.js"],
-    image: "/images/projects/scream.webp",
+    image: "/images/projects/scream.jpg",
     isPrivate: true,
     videoUrl: "/videos/scream-demo.mp4",
+    details:
+      "비공개 프로젝트로, React + TypeScript 프론트엔드와 Node.js 백엔드를 연동한 풀스택 웹 애플리케이션입니다. 소스코드는 공개되지 않습니다.",
+    features: [
+      "React + TypeScript 프론트엔드",
+      "Node.js REST API 백엔드",
+      "사용자 인증 시스템",
+      "실시간 데이터 처리",
+    ],
   },
 ];
 

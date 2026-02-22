@@ -82,9 +82,16 @@ body {
   opacity: 0.05;
 }
 
-/* Section spacing */
+/* Section spacing - 모바일(375px) 기준으로 최적화 */
 @layer components {
   .section-padding {
-    @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
+    @apply px-4 sm:px-6 md:px-12 lg:px-24 py-14 md:py-24 lg:py-32;
+  }
+}
+
+/* Mobile touch optimization */
+@media (max-width: 768px) {
+  button, a {
+    -webkit-tap-highlight-color: transparent;
   }
 }
