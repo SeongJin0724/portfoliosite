@@ -287,7 +287,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/projects/joycoin.png",
     details:
-      "실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다. JOYCOIN 플랫폼의 진입 전 법적 고지 확인 흐름을 중심으로 구성된 웹 프로젝트로, 언어 전환(한국어/English), 단계별 고지 탭, 스크롤 기반 확인 절차, 체크리스트 동의 후 진입 버튼 활성화 UX를 구현했습니다.",
+      "실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다. README 기준으로 프론트엔드(Next.js + TypeScript + Tailwind)와 백엔드(FastAPI)를 분리한 개발 환경으로 구성되어 있으며, Docker Compose로 프론트/백엔드를 동시에 실행할 수 있도록 설계되었습니다. 또한 /healthz 헬스체크, 환경 변수 샘플(.env.sample), Dockerfile 및 docker-compose.dev.yml 기반 실행 구조를 갖추고 있고, 이후 장바구니/체크아웃 모달 고도화, 회원 UI 개선, 인증/DB(PostgreSQL) 연동을 확장 단계로 계획한 프로젝트입니다.",
     features: [
       "한국어 / English 언어 전환",
       "법적 고지 탭(이용약관/위험 고지/토큰 성격/개인정보 처리방침)",
