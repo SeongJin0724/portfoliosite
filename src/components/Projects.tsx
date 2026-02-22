@@ -116,9 +116,18 @@ export function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
   const mousePosition = useMousePosition();
+  const prioritizedIds = [16, 13, 12, 2, 1];
   const sortedProjects = [...projects].sort((a, b) => {
-    const featureDiff = (b.features?.length ?? 0) - (a.features?.length ?? 0);
-    return featureDiff !== 0 ? featureDiff : a.id - b.id;
+    const aPriority = prioritizedIds.indexOf(a.id);
+    const bPriority = prioritizedIds.indexOf(b.id);
+
+    if (aPriority !== -1 || bPriority !== -1) {
+      if (aPriority === -1) return 1;
+      if (bPriority === -1) return -1;
+      return aPriority - bPriority;
+    }
+
+    return a.id - b.id;
   });
 
   const filtered =

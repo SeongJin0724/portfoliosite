@@ -262,15 +262,15 @@ export const projects: Project[] = [
   },
   {
     id: 16,
-    title: "Scream (기존 Kream 사이트 리뉴얼)",
+    title: "Scream (KREAM Commerce Redesign)",
     url: "https://scream-kappa.vercel.app",
     category: "App",
-    description: "Private 프로젝트 - 스크린 기반 애플리케이션",
+    description: "Full-stack commerce redesign project inspired by KREAM UI/UX patterns",
     tech: ["React", "TypeScript", "Node.js"],
     image: "/images/projects/scream.jpg",
     videoUrl: "/videos/scream-demo.mp4",
     details:
-      "비공개 프로젝트로, React + TypeScript 프론트엔드와 Node.js 백엔드를 연동한 풀스택 웹 애플리케이션입니다. 소스코드는 공개되지 않습니다.",
+      "A KREAM-inspired full-stack commerce project with a React + TypeScript frontend and Node.js backend, focused on product browsing, user flows, and data-driven interactions.",
     features: [
       "React + TypeScript 프론트엔드",
       "Node.js REST API 백엔드",
