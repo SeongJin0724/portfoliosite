@@ -286,14 +286,32 @@ export const projects: Project[] = [
     description: "실제 클라이언트 의뢰로 제작한 JOYCOIN 플랫폼 포트폴리오 배포 버전",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/projects/joycoin.png",
-    details:
-      "실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다. README 기준으로 프론트엔드(Next.js + TypeScript + Tailwind)와 백엔드(FastAPI)를 분리한 개발 환경으로 구성되어 있으며, Docker Compose로 프론트/백엔드를 동시에 실행할 수 있도록 설계되었습니다. 또한 /healthz 헬스체크, 환경 변수 샘플(.env.sample), Dockerfile 및 docker-compose.dev.yml 기반 실행 구조를 갖추고 있고, 이후 장바구니/체크아웃 모달 고도화, 회원 UI 개선, 인증/DB(PostgreSQL) 연동을 확장 단계로 계획한 프로젝트입니다.",
+    details: `실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다.
+
+README 기준으로 프론트엔드(Next.js + TypeScript + Tailwind CSS)와 백엔드(FastAPI)를 분리한 개발 환경으로 구성되어 있으며, Docker Compose로 프론트/백엔드를 동시에 실행할 수 있도록 설계된 프로젝트입니다. 또한 /healthz 헬스체크, 환경 변수 샘플(.env.sample), Dockerfile 및 docker-compose.dev.yml 기반 실행 구조를 갖추고 있습니다.
+
+주요 기능
+- 사용자
+  - 회원가입 / 로그인 (HttpOnly 쿠키 기반)
+  - 패키지 선택 및 입금 요청
+  - QR 코드 및 입금 주소 확인
+  - 마이페이지 (요약, 입금 내역 조회)
+- 관리자
+  - 입금 요청 목록 조회
+  - 입금 확인 처리
+  - 입금 거절 처리
+  - 텔레그램 실시간 알림
+  - 통계 대시보드
+
+기술 스택
+- Backend: FastAPI, PostgreSQL, SQLAlchemy, Alembic, Pydantic, SlowAPI, python-jose(JWT)
+- Frontend: Next.js 14, TypeScript, Tailwind CSS`,
     features: [
       "한국어 / English 언어 전환",
       "법적 고지 탭(이용약관/위험 고지/토큰 성격/개인정보 처리방침)",
       "스크롤 완료 기반 진행 상태 및 체크리스트 동의 흐름",
-      "조건 충족 시 플랫폼 입장 버튼 활성화",
-      "클라이언트 납품본 기준 일부 기능 제한된 포트폴리오 배포 버전",
+      "사용자/관리자 기능 분리 (입금 요청/확인/거절)",
+      "텔레그램 실시간 알림 및 통계 대시보드",
     ],
   },
 ];
