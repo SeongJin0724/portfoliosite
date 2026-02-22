@@ -99,18 +99,29 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   // 모달 열릴 때 body 스크롤 잠금 (스크롤바 사라지는 레이아웃 시프트 방지)
   useEffect(() => {
+    const html = document.documentElement;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousBodyPaddingRight = document.body.style.paddingRight;
+    const previousHtmlOverflow = html.style.overflow;
+
     if (project) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.paddingRight = `${scrollbarWidth}px`;
       document.body.style.overflow = "hidden";
+      html.style.overflow = "hidden";
+      window.dispatchEvent(new CustomEvent("modal-scroll-lock", { detail: { locked: true } }));
       setImgError(false);
     } else {
-      document.body.style.paddingRight = "";
-      document.body.style.overflow = "";
+      document.body.style.paddingRight = previousBodyPaddingRight;
+      document.body.style.overflow = previousBodyOverflow;
+      html.style.overflow = previousHtmlOverflow;
+      window.dispatchEvent(new CustomEvent("modal-scroll-lock", { detail: { locked: false } }));
     }
     return () => {
-      document.body.style.paddingRight = "";
-      document.body.style.overflow = "";
+      document.body.style.paddingRight = previousBodyPaddingRight;
+      document.body.style.overflow = previousBodyOverflow;
+      html.style.overflow = previousHtmlOverflow;
+      window.dispatchEvent(new CustomEvent("modal-scroll-lock", { detail: { locked: false } }));
     };
   }, [project]);
 
