@@ -280,13 +280,13 @@ export const projects: Project[] = [
   },
   {
     id: 17,
-    title: "JOYCOIN",
+    title: "JOYCOIN(바이브코딩 프로젝트트)",
     url: "https://joycoin-portfolio-frontend.vercel.app",
     category: "App",
     description: "실제 클라이언트 의뢰로 제작한 JOYCOIN 플랫폼 포트폴리오 배포 버전",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/projects/joycoin.png",
-    details: `실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다.
+    details: `실제 클라이언트에게 의뢰를 받고 제작한 사이트이며 해당 사이트는 포트폴리오용으로 배포되었습니다. 실제 클라이언트에게 넘긴 사이트와 다르게 일부 기능이 제한적일 수 있습니다.(실제 배포 URL: joycoinweb.com)
 
 README 기준으로 프론트엔드(Next.js + TypeScript + Tailwind CSS)와 백엔드(FastAPI)를 분리한 개발 환경으로 구성되어 있으며, Docker Compose로 프론트/백엔드를 동시에 실행할 수 있도록 설계된 프로젝트입니다. 또한 /healthz 헬스체크, 환경 변수 샘플(.env.sample), Dockerfile 및 docker-compose.dev.yml 기반 실행 구조를 갖추고 있습니다.
 
